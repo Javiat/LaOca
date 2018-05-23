@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class=row>
+	<div class="col-md-4">
+		</div>
+		<div class="col-md-4">
+				
+					<h1>Registrate</h1>
+				        <span id="mensajeRegistro"></span>
+				        <p>
+				          <label>Email:</label>
+				          <input type="text" name="email" placeholder="Introduzca el email" id="email" class="form-control" data-validate = "El tamaño mínimo de la contraseña es 4" required/>
+				        </p>
+				        <p>
+				            <label>Contraseña:</label>
+				            <input type="password" name="pass" id="pwd1" placeholder="Introduzca la contraseña" class="form-control" required/>
+				        </p>
+				        <p>
+				            <label>Contraseña2:</label>
+				            <input type="password" name="pass" id="pwd2" placeholder="Repite la contraseña" class="form-control" required/>
+				        </p>
+				        
+				        <p>
+				              <input type="submit" value="Registrar" class="btn btn-red" onclick="registrar()" />
+				         </p>
+			
+		</div>
+		<div class="col-md-4">
+		</div>
+	</div>
+	<script src="scripts/GestionCuentas.js"></script>
+
+</body>
+</html>

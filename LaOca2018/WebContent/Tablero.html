@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tablero</title>
+    <meta charset="UTF-8">
+ 	<meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+
+<div class="row" id="panel-juego">
+	<div class="col-md-3">
+				 <div class="juego">
+                    <input type="number" min="2" max="4" placeholder="Nº Jugadores" id="numero" >
+                    <button onclick="crearPartida()" id="btnCrear" class="btn btn-primary">Crear Partida</button>
+                </div>
+                <div class="juego">
+                    <button onclick="unirse()" id="btnUnirse" class="btn btn-primary">Unirse a una Partida</button>
+                </div>
+                <div class="juego">
+                    <span><h5>Jugadores de la Sala</h5></span>
+                    <ul style="padding-top: 10px;" id="listaJugadores">
+                    </ul>
+                </div>
+                <div class="juego">
+                	<span id="nombre"></span>
+                
+                </div>
+             
+	</div>
+	<div class="col-md-6">
+		 <textarea  readonly id="partida" >
+	
+        </textarea>
+	 	
+	 	
+	<div class="container"  >
+		<div class="row">
+				<span id="spanListaJugadores"></span>
+		</div>
+	</div>
+	</div>
+	<div class="col-md-3">
+			<button id="lanzarDado"  disabled="true" class="btn btn-success" onclick="lanzarDado()">
+		           <img id="dado" src="img/dado.jpg">
+		    </button>
+		    
+	 			
+	</div>
+</div>
+
+
+<script src="scripts/partidas.js"></script>
+<script src="scripts/tablero.js"></script>
+<script src="scripts/GestionCuentas.js"></script>
+<script>
+	if (sessionStorage.getItem('email')!=null)
+		document.getElementById("nombre").innerHTML=sessionStorage.getItem('email');	
+	</script>
+<script>
+	var jugadores = [];
+	/* var lienzo=document.getElementById("tablero");
+	var tablero=new Tablero(lienzo);
+	tablero.dibujar(); */
+	 
+
+</script>
+
+
+</body>
+</html>

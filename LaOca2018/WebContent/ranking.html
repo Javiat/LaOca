@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ranking</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+   
+        <div class="row">
+        	<div class="col-md-2"></div>
+        	<div class="col-md-2" style="margin-top:20px;">
+	        	<div class="row">
+	        		<img id="perfil" src="./img/user.jpg">
+	        	</div>
+	        	<div class="row">
+	        		<span style="margin-top:20px;" id="nombre"></span>
+	        	</div>
+        	
+        	</div>
+            <div class="col-md-4">
+	            <div>
+	          
+	                <div class="container">
+	                    <header>
+	                        <h1>Usuarios y victorias</h1>
+	                    </header>
+	                    <div class="table-responsive" style="width: 90%;">
+	                        <table class="table" id="ranking">
+	                            <thead>
+	                            <tr>
+	                                <th>Usuario</th>
+	                                <th>Victorias</th>
+	                            </tr>
+	                            </thead>
+	                            <tbody>
+									
+	                            </tbody>
+	                        </table>
+	                    </div>
+	                </div>
+            </div>
+        </div>
+        <div clas="col-md-4"></div>
+    </div>
+
+<script src="scripts/GestionCuentas.js"></script>
+<script>
+	if (sessionStorage.getItem('email')!=null)
+		document.getElementById("nombre").innerHTML=sessionStorage.getItem('email');	
+		
+</script>
+<script>
+	ranking();
+</script>
+
+
+
+</body>
+</html>

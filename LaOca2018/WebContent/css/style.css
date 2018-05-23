@@ -1,0 +1,64 @@
+.btn-green{
+    width: 100%;
+    background-color: #9ABE05;
+    color: #F3F6FF;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-green:hover{
+    width: 100%;
+    background-color: #9ABE05;
+    color: #F3F6FF;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-red{
+    width: 100%;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor:pointer;
+}
+.btn-red:hover{
+    width: 100%;
+    background-color: #C23F3E;
+    color: #F3F6FF;
+    font-weight: bold;
+    cursor:pointer;
+}
+
+.menu{
+	margin-top:15px;
+	background-color: #9ABE05;
+    height: 41px;
+    border-radius: 50px;
+    text-align: center;
+   	cursor:pointer;
+    padding:7px;
+}
+.menu span{
+	margin-top:10px;
+	color:white;
+}
+#perfil{
+	height:100px;
+}
+.juego{
+	
+	padding:30px;
+}
+#chat{
+	height:200px;
+}
+#panel-juego{
+	text-align:center;
+	background-color:#CCFCCB;
+}
+#dado{
+	width:80px;
+	cursor:pointer;
+}
+#partida{
+	width:400px;
+	height:400px;
+}

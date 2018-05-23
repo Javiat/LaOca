@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+</head>
+<body>
+   
+        <div class="row">
+        	<div class="col-md-2"></div>
+        	<div class="col-md-2" style="margin-top:20px;">
+	        	<div class="row">
+	        		<img id="perfil" src="./img/user.jpg">
+	        	</div>
+	        	<div class="row">
+	        		<span style="margin-top:20px;" id="nombre"></span>
+	        	</div>
+        	
+        	</div>
+            <div class="col-md-4">
+            
+       			<h1>Cambiar Contraseña</h1>
+				        <span id="mensajePassword"></span>
+				        <p>
+				          
+				          <input id="pwd1" type="password" name="pass" placeholder="Introduce tu contraseña actual" class="form-control"  required/>
+				        </p>
+				        <p>
+				   
+				            <input id="pwd1Nueva" type="password" name="pass" placeholder="Introduce la nueva contraseña." class="form-control" required/>
+				        </p>
+				        <p>
+				           
+				            <input id="pwd2Nueva" type="password" name="pass" placeholder="Repite la nueva contraseña" class="form-control" required/>
+				        </p>
+				        
+				        <p>
+				              <input type="submit" onclick="cambiarPass()" value="Modificar" class="btn btn-red"  />
+               <div class="col-md-4">
+               
+            </div>
+        </div>
+        
+    </div>
+            
+  
+
+<script src="scripts/GestionCuentas.js"></script>
+<script>
+	if (sessionStorage.getItem('email')!=null)
+		document.getElementById("nombre").innerHTML=sessionStorage.getItem('email');	
+		
+	</script>
+
+
+
+</body>
+</html>

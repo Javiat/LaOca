@@ -1,0 +1,47 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+ <title>La Oca 2018</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	
+	<div class="row">
+		<div class="col-md-4">
+			     
+		</div>
+		<div class="col-md-4" margin-top:20px;">
+				
+					<h1>Identificate</h1>
+					<span id="mensajeLogin"></span>
+				 <p>
+			        <label>Email:</label>
+			        <input   class="form-control" type="text" name="email" id="email" onblur="getDatos()" placeholder="Email" required/>
+			      </p>
+			      <p>
+			          <label>Contraseña:</label>
+			          <input  class="form-control" type="password" name="pass" id="pwd1" placeholder="Contraseña" required/>
+			      </p>
+			      <p>
+			            <input type="submit" value="Entrar"  onclick="login()" class="btn btn-green" />
+			        </p>
+			        <p>
+			        	<a class="txt2" href="registro.html">
+							Crea Tu Cuenta
+							
+						</a>
+			        </p>
+					
+				
+				
+		</div>
+		<div class="col-md-4">
+		</div>		
+	</div>
+	<script src="scripts/GestionCuentas.js"></script>
+</body>
+</html>
